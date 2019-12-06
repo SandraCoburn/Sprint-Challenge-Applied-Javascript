@@ -31,7 +31,7 @@
 function createCards(data){
      
         data.forEach(element => {
-            element[1].forEach(cards2 => {
+            element[1].forEach(cardInfo => {
                 const card = document.createElement('div');
                 const headline = document.createElement('div');
                 const author = document.createElement('div');
@@ -46,9 +46,9 @@ function createCards(data){
                 imgContainer.classList.add('img-container');
 
         //Add Text Content
-                headline.textContent = cards2.headline;
-                authorImg.src = cards2.authorPhoto;
-                by.textContent = cards2.authorName;
+                headline.textContent = cardInfo.headline;
+                authorImg.src = cardInfo.authorPhoto;
+                by.textContent = cardInfo.authorName;
 
         //Append children
             card.appendChild(headline);
