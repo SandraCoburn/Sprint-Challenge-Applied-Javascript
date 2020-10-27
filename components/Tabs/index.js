@@ -8,7 +8,7 @@
 //  The tab component should look like this:
 //    <div class="tab">topic here</div>
 
-//Axios Get request
+//Axios Get request and create tabs
 axios.get('https://lambda-times-backend.herokuapp.com/topics')
     .then(response => {
         console.log('this is:', response);
